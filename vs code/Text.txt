@@ -1,0 +1,9 @@
+Thứ hai, ngày 8, tháng 5 năm 2023
+
+Vũ Hồng Nhật Hạnh
+
+Bài 1: Giới thiệu tổng quan thế giới lập trình
+
+- Cài đặt công cụ và tiện ích
+
+- Thao tác với Git
