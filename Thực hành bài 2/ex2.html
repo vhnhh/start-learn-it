@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        <table cellspacing="20" width="">
+            <tr>
+                <td align="right">First Name</td>
+                <td>
+                    <input type="text" placeholder="Enter Your Name" required/>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Last Name</td>
+                <td>
+                    <input type="text" placeholder="Enter ALst Name" required/>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Date of Birth</td>
+                <td>
+                    <select name="date" required>
+                        <option value="">Date</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                    </select>
+                    <select name="month" required>
+                        <option value="">Month</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                    </select>
+                    <select name="Year" required>
+                        <option value="">Year</option>
+                        <option value="">2000</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Gender</td>
+                <td>
+                    <label>
+                        <input type="radio" name="sex" checked/>Female
+                    </label>
+                    <label>
+                        <input type="radio" name="sex"/>Male
+                    </label>
+                    <label>
+                        <input type="radio" name="sex"/>Other
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Country</td>
+                <td>
+                    <select required>
+                        <option value="">Country</option>
+                        <option value="">Viet Nam</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">E-mail</td>
+                <td>
+                    <input type="email" name="email" required/>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Password</td>
+                <td>
+                    <input type="password" name="password" required/>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <label>
+                        <input type="checkbox" checked required/>I Agree to the Terms of use
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">
+                    <input type="submit" value="Submit"/>
+                    <input type="button" value="Cancel"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

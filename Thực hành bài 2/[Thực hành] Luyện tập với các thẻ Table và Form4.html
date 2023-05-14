@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo Form Liên Hệ</title>
+</head>
+<body>
+    <h2>Liên hệ</h2>
+    <input type="text" name="fullname" placeholder="Họ Và Tên" required/><br><br>
+    <input type="email" name="email" placeholder="Email" required/><br><br>
+    <input type="tel" name="tel" placeholder="Số Điện Thoại" required/><br><br>
+    <label for="subject">Chủ đề</label>
+    <select id="subject" name="subject">
+        <option value="general">Tổng quan</option>
+        <option value="sales">Bán hàng</option>
+        <option value="support">Hỗ trợ</option>
+        <option value="partnerships">Đối tác</option>
+    </select><br><br>
+    <label for="content">Nội dung</label>
+    <textarea id="content" name="content" rows="4"></textarea><br>
+    <label for="noti"><input type="checkbox" name="noti" id="noti"/>Nhận thông tin từ chúng tôi</label><br><br>
+    <input type="submit" value="Gửi">
+</body>
+</html>

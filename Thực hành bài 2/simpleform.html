@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form cơ bản</title>
+    <style>
+        .wuw {
+            font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form method="get" action="simpleform.html" class="wuw">
+        <h2>Oder Form</h2>
+        <p>What would you like to buy?</p>
+        <select>
+            <option value="">A</option>
+            <option>B (+ 0.5$)</option>
+            <option>C (+ 0.5$)</option>
+        </select>
+        <p>How many would you like to order?</p>
+        <label><input type="radio" name="$"/>1 - $10</label><br>
+        <label><input type="radio" name="$"/>2 - $20</label><br>
+        <label><input type="radio" name="$"/>3 - $25</label><br><br>
+        <label>Name<span style="color: red;">*</span></label><br>
+        <input type="text" name="firstName" placeholder="First Name" size="15" required/>
+        <input type="text" name="lastName" placeholder="Last Name" size="15" required/><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" size="36"/><br><br>
+        <label for="nP">Phone Number</label><br>
+        <input type="tel" name="nP1" id="nP" size="5" maxlength="4"/> -
+        <input type="tel" name="nP2" id="nP" size="7" maxlength="4"/> -
+        <input type="tel" name="nP3" id="nP" size="7" maxlength="4"/><br><br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+</body>
+</html>

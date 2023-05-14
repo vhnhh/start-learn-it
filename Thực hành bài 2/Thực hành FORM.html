@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành Form</title>
+</head>
+<body>
+    <form action="#" id="signUp" name="signUp" method="post" enctype="multipart/form-data">
+        <h2>Create Account</h2>
+        <fieldset style="width: 610px;">
+            <legend>Registration information</legend>
+            <b>First Name*: </b><input type="text" name="firstName" placeholder="Enter Your First Name" autofocus required/>
+            <b>Last Name: </b><input type="text" name="lastName" placeholder="Enter Your Last Name"/><br/><br/>
+            <b>Email*: </b><input type="text" name="email" placeholder="Enter Your Email" required/>
+            <b>Phone*: </b><input type="tel" name="phoneNumber" maxlength="12" placeholder="Enter Your Phone Number" required/><br/><br/>
+            <b>Password*: </b><input type="password" name="password" placeholder="Enter Your Password" required/>
+            <b>Confirm Password*: </b><input type="password" name="confirmPassword" placeholder="Enter Your Password Again" required/>
+        </fieldset>
+        <fieldset style="width: 610px;">
+            <legend>Personal information</legend>
+            <b>Gender: </b>
+            <label><input type="radio" name="gender" value="male" checked/>Male</label>
+            <label><input type="radio" name="gender" value="female"/>Female</label>
+            <label><input type="radio" name="gender" value="other"/>Other</label>
+            <b>Hobbies: </b>
+            <label><input type="checkbox" name="hobbies" value="music"/>Music</label>
+            <label><input type="checkbox" name="hobbies" value="sports"/>Sports</label>
+            <label><input type="checkbox" name="hobbies" value="travel"/>Travel</label>
+            <label><input type="checkbox" name="hobbies" value="movies"/>Movies</label><br/><br/>
+            <b>Source Of Income: </b>
+            <select>
+                <option value="emlpoyed">Employed</option>
+                <option value="emlpoyed2">Employed2</option>
+                <option value="emlpoyed3">Employed3</option>
+            </select>
+            <b>Income: </b><input type="range" name="range" min="" max="" value="0"/><br/><br/>
+            <b>Age: </b><input type="number" name="age" min="18" max="32" value="18"/>
+            <b>Profile Picture: </b><input type="file" name="pfP"/><br/><br/>
+            <b>Birthday: </b><input type="date" name="birthday"/>
+            <b>Address: </b><input type="text" name="address" placeholder="Enter Your Address"/><br/><br/>
+            <b>Bio: </b><textarea rows="3" cols="45"></textarea>
+        </fieldset><br/>
+        <input type="submit" value="Create"/>
+        <input type="reset" value="Reset"/>
+    </form>
+</body>
+</html>

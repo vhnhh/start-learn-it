@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Thông Tin</title>
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        <label>Họ và tên</label>
+        <input type="text" name="h&t" required/>
+        <label>Email</label>
+        <input type="email" name="email" required/><br><br>
+        <label>Chủ đề</label>
+        <input type="text" name="chuDe" maxlength="20" required>
+        <label>Img</label>
+        <input type="file" required/><br><br>
+        <label>Nội dung</label>
+        <textarea name="noiDung" rows="4" cols="50" minlength="30" maxlength="430" required></textarea><br><br>
+        <input type="submit" value="Gửi">
+    </form>
+</body>
+</html>
