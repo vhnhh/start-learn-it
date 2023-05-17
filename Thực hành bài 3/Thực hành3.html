@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành 3</title>
+</head>
+<body>
+    <form action="https://www.google.com.vn/search?" method="get" enctype="multipart/form-data">
+        <h2>Trang nghe nhạc</h2>
+        <fieldset>
+            <legend>List nhạc</legend>
+            <table border="1" width="50%">
+                <tr>
+                    <td>
+                        <audio src="music/BenTrenTangLau-TangDuyTan-7412012.mp3" controls></audio><br>
+                        Bài hát: Bên trên tầng lầu <br>
+                        Nghệ sĩ: Tăng Duy Tân
+                    </td>
+                    <td>
+                        <audio src="music/HaiPhutHonCM1XRemix-Phao-6216244.mp3" controls></audio><br>
+                        Bài hát: Hai phút hơn <br>
+                        Nghệ sĩ: Pháo (Masew Remix)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <audio src="music/MotNgayChangNang-Phao-9400644.mp3" controls></audio><br>
+                        Bài hát: Một ngày chẳng nắng <br>
+                        Nghệ sĩ: Pháo
+                    </td>
+                    <td>
+                        <audio src="music/NauAnChoEm-Den-9466587.mp3" controls></audio><br>
+                        Bài hát: Nấu ăn cho em <br>
+                        Nghệ sĩ: Đen Vâu, PiaLinh
+                    </td>
+                </tr>
+            </table>
+            <fieldset>
+                <legend>Hãy tìm tên bài hát ưa thích tại đây</legend>
+                <label for="search">Tìm kiếm</label>
+                <input type="text" name="q" id="search" />
+                <input type="submit" value="Tìm" />
+            </fieldset>
+        </fieldset>
+    </form>
+</body>
+</html>

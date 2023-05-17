@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành 1</title>
+</head>
+<body>
+    <h2>Đăng ký mua xe ô tô</h2>
+    <form action="" method="post" enctype="multipart/form-data">
+        <label for="">Họ và tên</label>
+        <input type="text" name="" id="" placeholder="Tên của bạn" required/><br>
+        <label for="">Email</label>
+        <input type="email" name="" id="" placeholder="Email của bạn" required/><br>
+        <label for="">Số điện thoại</label>
+        <input type="text" name="" id="" placeholder="Số điện thoại của bạn" required/><br>
+        <label for="">Xe ô tô muốn mua</label>
+        <input type="text" name="" id="" list="cars" placeholder="Mẫu xe" required/>
+        <datalist id="cars">
+            <option value="BMW"></option>
+            <option value="Audi"></option>
+            <option value=""></option>
+        </datalist><br>
+        <label for="">Lời nhắn</label>
+        <textarea name="" id="" cols="40" rows="5"></textarea><br>
+        <label for="">Màu xe</label>
+        <select name="" id="" required>
+            <option value="">Đỏ</option>
+            <option value="">Xanh</option>
+        </select>
+        <fieldset>
+            <legend>Phương thức thanh toán</legend>
+            <label><input type="radio" name="" id="" required>Thẻ tín dụng</label>
+            <label for=""><input type="radio" name="" id=""required>Chuyển khoản ngân hàng</label>
+        </fieldset>
+        <label for=""><input type="radio" name="" id="" required checked>Tôi đồng ý với các điều khoản</label><br>
+        <input type="submit" name="" id="" value="Gửi">
+    </form>
+</body>
+</html>
