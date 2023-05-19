@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px 35px;
+}
+
+form {
+    display: inline-flex;
+    flex-direction: column;
+    width: 99%;
+}
+
+label {
+    padding: 8px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input, textarea {
+    border: solid 1px;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+input[name="fullName"] {
+    text-transform: capitalize;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: rgb(59, 161, 59);
+    cursor: pointer;
+}
