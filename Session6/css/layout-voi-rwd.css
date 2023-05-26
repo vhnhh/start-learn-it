@@ -167,8 +167,8 @@ section:nth-of-type(2) {
         display: grid;
         grid-template-columns: repeat(3, 3fr);
         grid-template-rows: repeat(2, 2fr);
-        grid-gap: 20px;
-        padding-bottom: 20px;
+        grid-gap: 30px;
+        padding: 50px 50px 30px;
     }
 
     .content {
