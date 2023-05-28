@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biến, kiểu dữ liệu và toán tử</title>
+</head>
+<body>
+    <input type="text" name="ly" id="ly"><br>
+    <input type="text" name="hoa" id="hoa"><br>
+    <input type="text" name="sinh" id="sinh"><br>
+    <input type="submit" value="Click!" onclick="result()">
+    <div id="tbm"></div>
+    <div id="tong"></div>
+    <script>
+        var a = parseInt(document.getElementById("ly").value);
+        var b = parseInt(document.getElementById("hoa").value);
+        var c = parseInt(document.getElementById("sinh").value);
+        var sum = (a + b + c)/3
+        console.log(typeof(sum));
+
+        function result(){
+            document.getElementById("tbm").innerHTML = sum;
+            console.log((a + b + c)/3);
+        }
+    </script>
+</body>
+</html>

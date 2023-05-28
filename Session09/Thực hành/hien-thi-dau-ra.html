@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị đầu ra</title>
+    <script>
+        function showMessage(){
+            alert('Xin chào!');
+            document.getElementById("message").innerHTML = "Xin chào!";
+            console.log("Xin chào!");
+        }
+
+        function showMessageWrite(){
+            document.write("Xin chào!");
+        }
+    </script>
+</head>
+<body>
+    <div id="message"></div>
+    <input type="button" name="btn" id="btn" value="Click Me!" onclick="showMessage();">
+    <input type="button" name="btn2" id="btn2" value="Click Me!" onclick="showMessageWrite();">
+</body>
+</html>
