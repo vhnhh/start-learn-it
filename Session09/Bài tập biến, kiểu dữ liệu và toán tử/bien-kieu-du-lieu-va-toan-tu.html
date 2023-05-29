@@ -13,16 +13,40 @@
     <input type="submit" value="Click!" onclick="result()">
     <div id="tbm"></div>
     <div id="tong"></div>
+    <br><br>
+    <input type="text" name="" id="celsius" placeholder="Hãy nhập °C"><br>
+    <input type="button" name="" id="" value="Đổi °F" onclick="fahrenheit()">
+    <div id="fahrenheit"></div>
+    <br><br>
+    <input type="text" id="banKinh" placeholder="Nhập bán kính, đơn vị cm"><br>
+    <input type="button" name="" value="Tính diện tích hình tròn" onclick="dienTich()">
+    <div id="dienTich"></div>
+    <br><br>
+    <input type="text" name="" id="banKinhChuVi" placeholder="Nhập bán kính, đơn vị cm"><br>
+    <input type="button" name="" id="ketQua" value="Tính chu vi hình tròn" onclick="chuVi()">
+    <div id="chuVi"></div>
     <script>
-        var a = parseInt(document.getElementById("ly").value);
-        var b = parseInt(document.getElementById("hoa").value);
-        var c = parseInt(document.getElementById("sinh").value);
-        var sum = (a + b + c)/3
-        console.log(typeof(sum));
-
         function result(){
-            document.getElementById("tbm").innerHTML = sum;
-            console.log((a + b + c)/3);
+            var a = parseInt(document.getElementById("ly").value);
+            var b = parseInt(document.getElementById("hoa").value);
+            var c = parseInt(document.getElementById("sinh").value);
+            document.getElementById('tbm').innerHTML ="Điểm trung bình môn: " + ((a + b + c)/3).toFixed(2);
+            document.getElementById('tong').innerHTML ="Tổng: " + (a + b + c);
+        }
+
+        function fahrenheit(){
+            var c = parseInt(document.getElementById("celsius").value);
+            document.getElementById("fahrenheit").innerHTML = c + " độ Xen-xi-út = " + (9/5 * c + 32) + " độ Pha-ren-hét";
+        }
+
+        function dienTich(){
+            const s = parseInt(document.getElementById("banKinh").value);
+            document.getElementById("dienTich").innerHTML = "Diện tích hình tròn có bán kính " + s + "cm là " + (s*s*Math.PI).toFixed(2) + "cm<sup>2</sup>";
+        }
+
+        function chuVi(){
+            let p = parseInt(document.getElementById("banKinhChuVi").value);
+            document.getElementById("chuVi").innerHTML = "Chu vi hình tròn có bán kính " + p + "cm là " + (p*2*Math.PI).toFixed(2) + "cm<sup>2</sup>"
         }
     </script>
 </body>
