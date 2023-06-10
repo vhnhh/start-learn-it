@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xep loai hoc sinh theo thanh tich</title>
+</head>
+<body>
+    <script>
+        // xep loai hoc sinh theo thanh tich
+        let html = parseInt(prompt(""));
+        let css = parseInt(prompt(""));
+        let js = parseInt(prompt(""));
+        let gpa = ((html + css + js) / 3).toFixed(2);
+        let rank;
+
+        if (gpa >= 9) {
+            gpa += " - xuat sac";
+        } else if (gpa >= 8) {
+            gpa += " - kem";
+        } else if (gpa >= 7) {
+            gpa += " - gioi";
+        } else if (gpa >= 6) {
+            gpa += " - trung binh";
+        } else if (gpa < 5) {
+            gpa += " - yeu";
+        } else {
+            gpa += " - kha";
+        }
+        
+        console.log(gpa)
+    </script>
+</body>
+</html>

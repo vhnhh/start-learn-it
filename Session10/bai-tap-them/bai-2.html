@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tim so lon nhat, nho nhat</title>
+</head>
+<body>
+    <script>
+        // tim so lon nhat, nho nhat - toan tu 3 ngoi
+        let x = parseInt(prompt(""));
+
+        let y = parseInt(prompt(""));
+
+        let z = parseInt(prompt(""));
+
+        let min = x;
+        min = (min > y) ? y : ((min > z) ? z : x);
+
+        let max = x;
+        max = (max < y) ? y : ((max < z) ? z : x);  
+
+        console.log(min);
+
+        console.log(max);
+    </script>
+</body>
+</html>

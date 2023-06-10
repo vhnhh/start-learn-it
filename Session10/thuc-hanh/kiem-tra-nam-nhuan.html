@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiem tra nam nhuan</title>
+</head>
+<body>
+    <script>
+        // C1
+        let nam = parseInt(prompt("nhap so nam"));
+        if (nam % 4 == 0) {
+            if (nam % 10 == 0) {
+                if (nam % 400 == 0) {
+                    console.log(nam + "la nam nhuan")
+                } else {
+                    console.log(nam + " khong la nam nhuan")
+                }
+            } else {
+                console.log(nam + " la nam nhuan")
+            }
+        } else {
+            console.log(nam + " khong la nam nhuan")
+        }
+
+
+        // C2
+        let year = parseInt(prompt("Enter a year"));
+        let leapYear = true;
+        if (year % 4 == 0) {
+            if (year % 10 == 0) {
+                if (year % 400 ==0) {
+                    leapYear = true;
+                }
+            } else {
+                leapYear = true;
+            }
+        }
+
+        if (leapYear) {
+            console.log(year + " is a leap year")
+        } else {
+            console.log(year + " is not a leap year")
+        }
+    </script>
+</body>
+</html>

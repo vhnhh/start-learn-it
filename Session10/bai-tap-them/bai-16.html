@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập vào 3 số từ bàn phím, hiển thị dấu của tích 3 số (dấu + hoặc -)</title>
+</head>
+<body>
+    <script>
+        let x = parseInt(prompt("nhap vao so thu 1"));
+        let y = parseInt(prompt("nhap vao so thu 2"));
+        let z = parseInt(prompt("nhap vao so thu 3"));
+        let result = x * y * z;
+
+        if (result < 0) {
+            document.write("-" + result);
+        } else if ( result > 0) {
+            document.write("+" + result);
+        } else {
+            document.write("tich 3 so la 0")
+        }
+    </script>
+</body>
+</html>

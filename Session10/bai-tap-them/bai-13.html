@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập n số nguyên dương và tính tổng các số đó. Chương trình kết thúc khi nhập vào 1 số nguyên âm</title>
+</head>
+<body>
+    <script>
+        let sum = 0;
+        while (true) {
+            let n = parseInt(prompt("nhap vao cac so nguyen duong va tinh tong cac so nguyen duong do"));
+            if (n < 0) {
+                alert("day khong phai la so nguyen duong");
+                break;
+            } else if (n == 0) {
+                alert("day khong phai la so nguyen");
+                break;
+            } else if (n > 0) {
+                sum += n;
+                alert(sum);
+            } else {
+                alert(sum);
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

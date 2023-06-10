@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phep toan 2 so</title>
+</head>
+<body>
+    <script>
+        // nhap vao 2 so va 1 phep tinh
+        let x = parseInt(prompt("hay nhap so"));
+        let y = parseInt(prompt("hay nhap so"));
+        let z = prompt("hay nhap phep tinh");
+
+        // tinh phep tinh do va xuat ra console.log()
+        switch (z) {
+            case "+":
+            console.log(x + " + " + y + " = " + (x + y));
+            break;
+            case "-":
+            console.log(x + " - " + y + " = " + (x - y));
+            break;
+            case "*":
+            console.log(x + " * " + y + " = " + (x * y));
+            break;
+            default:
+            console.log(x + " / " + y + " = " + ((x / y).toFixed(2)));
+        }
+    </script>
+</body>
+</html>

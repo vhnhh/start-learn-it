@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập vào 3 số từ bàn phím, sắp xếp theo thứ tự giảm dần và in ra</title>
+</head>
+<body>
+    <script>
+        let x = parseInt(prompt("so thu 1"));
+        let y = parseInt(prompt("so thu 2"));
+        let z = parseInt(prompt("so thu 3"));
+
+        let max = x;
+        max = (max < y) ? y : max;
+        max = (max < z) ? z : max;
+
+        let min = x;
+        min = (min > y) ? y : min;
+        min = (min > z) ? z : min;
+
+        // console.log(max);
+        // console.log(min);
+        
+        document.write(max + "<br>");
+
+        if (x != max && x != min) {
+            document.write(x + "<br>");
+        }
+        if (y != max && y != min) {
+            document.write(y + "<br>");
+        }
+        if (z != max && z != min) {
+            document.write(z + "<br>");
+        }
+
+        document.write(min);
+    </script>
+</body>
+</html>

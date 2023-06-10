@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // cho nhap vao 3 so va 
+        // kiem tra do co phai la hinh tam giac khong,
+        // la tam giac can, vuong, deu, hay vuong can
+        let x = parseInt(prompt(""));
+        let y = parseInt(prompt(""));
+        let z = parseInt(prompt(""));
+
+        if (x + y > z && x + z > y && z + y > x) {
+            // console.log("day la 1 tam giac");
+            if (x == y && x == z && y == z) {
+                console.log("day la tam giac deu");
+            } else if (x == y || x == z || y == z) {
+                console.log("day la tam giac can");
+
+                // if ((x**2 == y**2 + z**2) || (y**2 == x**2 + z**2) || (z**2 == y**2 + x**2)) {
+                //     console.log("day la tam giac vuong can");
+                // } else {
+                //     console.log("day la tam giac can");
+                // }
+            } else if ((x**2 == y**2 + z**2) || (y**2 == x**2 + z**2) || (z**2 == y**2 + x**2)) {
+                console.log("day la tam giac vuong");
+            } else if ((x**2 > y**2 + z**2) || (y**2 > x**2 + z**2) || (z**2 > y**2 + x**2)) {
+                console.log("day la tam giac tu");
+            } else if ((x**2 < y**2 + z**2) || (y**2 < x**2 + z**2) || (z**2 < y**2 + x**2)) {
+                console.log("day la tam giac nhon");
+            } else {
+                console.log("day la tam giac vuong can");
+            }
+        } else {
+            console.log("day khong phai la 1 tam giac");
+        }
+    </script>
+</body>
+</html>

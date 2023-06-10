@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 18</title>
+</head>
+
+<body>
+    <script>
+        // In ra các số từ 1-100
+        /*
+            - Chia hết cho 3: Fizz
+            - Chia hết cho 5: Buzz
+            - Chia hết cho 3 và 5: FizzBuzz
+        */
+        // Bước 1: Duyệt các số từ 1 - 100
+        for (let index = 1; index <= 100; index++) {
+            // Bước 2: Kiểm tra chia hết cho 3
+            let checkFizz = false;
+            if (index % 3 == 0) {
+                checkFizz = true;
+            }
+            // Bước 3: Kiểm tra chia hết cho 5
+            let checkBuzz = false;
+            if (index % 5 == 0) {
+                checkBuzz = true;
+            }
+            // Bước 4: In ra kết quả
+            if (checkFizz || checkBuzz) {
+                console.log("Số", index, ":");
+                if (checkFizz && !checkBuzz) {
+                    console.log("Fizz");
+                } else if (!checkFizz && checkBuzz) {
+                    console.log("Buzz");
+                } else if (checkFizz && checkBuzz) {
+                    console.log("FizzBuzz");
+                }
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>

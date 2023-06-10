@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let m = parseInt(prompt("nhap thang"));
+        let y = parseInt(prompt("nhap nam"));
+
+        switch (m) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                alert("thang " + m + " co 31 ngay");
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                alert("thang " + m + " co 30 ngay");
+                break;
+            case 2:
+                if (m % 4 == 0) {
+                    if (m % 10 == 0) {
+                        if (m % 400 == 0) {
+                            alert("thang " + m + " co 29 ngay");
+                        } else {
+                            alert("thang " + m + " co 28 ngay");
+                        }
+                    } else {
+                        alert("thang " + m + " co 29 ngay");
+                    }
+                } else {
+                    alert("thang " + m + " co 28 ngay");
+                }
+                break;
+            default:
+                alert("nhap lai thang va nam");
+                break;
+        }
+
+
+        
+    </script>
+</body>
+</html>

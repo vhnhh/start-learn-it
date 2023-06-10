@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kiem tra tuoi tuong ung voi gia xe bus</title>
+</head>
+<body>
+    <script>
+        // kiem tra tuoi tuong ung voi gia xe bus
+        let tuoi = parseInt(prompt("nhap so"));
+        if (tuoi < 6) {
+            console.log("miễn phí vé xe");
+        } else if (tuoi >= 6 && tuoi <18) {
+            console.log("giá vé 5000");
+        } else if (tuoi >= 18 && tuoi < 60 ) {
+            console.log("giá vé 10000");
+        } else {
+            console.log("miễn phí vé xe")
+        }
+    </script>
+</body>
+</html>

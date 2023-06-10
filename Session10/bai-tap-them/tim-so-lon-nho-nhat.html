@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toán tử ba ngôi số lớn nhất, nhỏ nhất</title>
+</head>
+<body>
+    <script>
+        // toán tử ba ngôi số lớn nhất, nhỏ nhất
+
+        let nb1 = parseInt(prompt("nhap so"));
+        let nb2 = parseInt(prompt("nhap so"));
+        let nb3 = parseInt(prompt("nhap so"));
+        
+        let min = nb1;
+        min = (min > nb2) ? nb2 : min;
+        min = (min > nb3) ? nb3 : min;
+
+        let max = nb1;
+        max = (max < nb2) ? nb2 : max;
+        max = (max < nb3) ? nb3 : max;
+
+        console.log(min);
+        console.log(max);
+
+
+    </script>
+</body>
+</html>

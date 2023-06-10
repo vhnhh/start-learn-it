@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính chỉ số cân nặng của cơ thể</title>
+</head>
+<body>
+    <script>
+        let w = parseInt(prompt("nhap so can nang (kg)"));
+        let h = parseFloat(prompt("nhap chieu cao (m)"));
+        let bmi = w / Math.pow(h);
+        alert(bmi);
+        if (bmi < 18.5) {
+            document.write("Underweight");
+        } else if (bmi >= 18.5 && bmi <= 24.9) {
+            alert("Binh thuong");
+        } else if (bmi >= 25 && bmi <= 29.9) {
+            alert("Tien beo phi");
+        } else if (bmi >= 30 && bmi <= 34.9) {
+            alert("Beo phi do I");
+        } else if (bmi >= 35 && bmi <= 39.9) {
+            alert("Beo phi do II");
+        } else {
+            alert("Beo phi do III");
+        }
+    </script>
+</body>
+</html>

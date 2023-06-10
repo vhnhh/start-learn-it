@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm các số Armstrong</title>
+</head>
+<body>
+    <script>
+        for (let i = 1; i < 10; i++) {
+            for (let j = 0; j < 10; j++) {
+                for (let k = 0; k < 10; k++) {
+                    let ijk3 = (i**3 + j**3 + k**3);
+                    let ijk = (i*100 + j*10 + k);
+                    if (ijk3 == ijk) {
+                        console.log(ijk3);
+                    }
+                }
+            }
+        }   
+        
+    </script>
+</body>
+</html>

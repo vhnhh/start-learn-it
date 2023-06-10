@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập vào một số nguyên, in ra số đảo ngược của nó (số nguyên gồm n chữ số chưa xác định)</title>
+</head>
+<body>
+    <script>
+        let n = prompt("nhap vao 1 so");
+        let reverse = "";
+
+        for (let i = n.length -1; i >= 0; i--) {
+            reverse += n[i];
+        }
+
+        alert("so dao nguoc cua " + n + " la " + reverse)
+    </script>
+</body>
+</html>

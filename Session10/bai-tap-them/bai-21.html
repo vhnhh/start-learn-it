@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tàu con thoi Rikkei Academy</title>
+</head>
+<body>
+    <script>
+        // let z = parseInt(prompt("độ cao mà tàu con thoi có thể đạt tới :"));
+        
+        while (true) {
+            var resource = parseInt(prompt("tàu con thoi Rikkei Academy có thể bay vào vũ trụ với số nhiên liệu (5000~30000) :"));
+            if (isNaN(resource)) {
+                alert("Vui lòng nhập số nhiên liệu là một số");
+            } else {
+                if (resource < 5000 || resource > 30000) {
+                    alert("Vui lòng nhập số nhiên liệu có giá trị trong khoảng 5000-30000");
+                } else {
+                    break;
+                }
+            }
+        }
+
+        while (true) {
+                var pilot = parseInt(prompt("phi hành gia (1~7) :"));
+                if (isNaN(pilot)) {
+                    alert("Vui lòng nhập số phi hành gia là một số");
+                } else {
+                    if (pilot < 1 || pilot > 7) {
+                        alert("Vui lòng nhập giá trị phi hành gia trong khoảng 1-7");
+                    } else {
+                        break;
+                    }
+            }
+        }
+
+        let resource50km = 100 * pilot;
+        let times = Math.floor(resource/resource50km);
+        let maxHeight = times * 50;
+        let resourceRemain = resource % resource50km;
+        alert("Độ cao tối đa: " + maxHeight + " - Số nhiên liệu còn lại: " + resourceRemain);
+
+    </script>
+</body>
+</html>

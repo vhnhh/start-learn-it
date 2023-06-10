@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính số tiền lãi và tiền nhận được sau thời gian gửi biết tính lãi theo lãi nhập gốc</title>
+</head>
+<body>
+    <script>
+        let amount = parseInt(prompt("Nhập vào số tiền gửi ngân hàng ban đầu"));
+        let rate = parseInt(prompt("Lãi suất năm (%)"));
+        let months = parseInt(prompt("Số tháng gửi"));
+        let rateMonth = rate/12/100;
+        let interest = 0;
+        
+
+        for (let i = 1; i <= months; i++) {
+            let interestMonth = amount * rateMonth;
+            interest += interestMonth;
+            document.write("Thang: " + i + "| Tien gui: " + amount + "| Tien lai: " + interestMonth + "<br>");
+            amount = amount + interestMonth;
+        }
+
+        document.write("Tong tien gui: " + amount + "<br>");
+        document.write("Tong lai: " + interest);
+    </script>
+</body>
+</html>

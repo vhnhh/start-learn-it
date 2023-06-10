@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập vào 1 số nguyên n, in ra các số chẵn và tính tổng các số chẵn từ
+        1 đến n</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("nhap vap 1 so nguyen n"));
+        let i = 1;
+        let tong = 0 ;
+        while (i <= n) {
+            i++
+            if (i % 2 == 0) {
+                 tong += i;
+                //  console.log(i);
+            }
+        }
+        alert(tong);
+    </script>
+</body>
+</html>
